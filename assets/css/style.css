@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+   transition: .2s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: rgba(0, 0, 0, 0.867);
+    color: white;
+}
+
+input, button{
+    font-family: 'Roboto';
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    border: 4px solid orange;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.calculator h1{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+}
+
+.calc{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.calc input{
+    width: 320px;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 24px;
+    outline: 0;
+}
+
+.calc input:focus{
+    border: 2px solid orange;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.act button{
+    padding: 30px 40px;
+    font-size: 24px;
+    background-color: white;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.act button:active{
+    border: 2px solid orange;
+    background-color: gray;
+}
+
+.resultBtn{
+    padding: 85px 40px;
+    background-color: orange;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.resultBtn:active{
+    background-color: black;
+    border: 2px solid orange;
+}
+
+.act{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.otvet{
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.clear{
+    width: 320px;
+    padding: 20px;
+    border: 2px solid transparent;
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    font-size: 24px;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.clear:active{
+    background-color: rgb(53, 52, 52);
+    border: 2px solid orange;
+}
+
+
